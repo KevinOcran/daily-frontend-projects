@@ -1,0 +1,80 @@
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding: 5px;
+    background-color: hsl(186, 13%, 70%);
+    color: hsl(0, 0%, 100%);
+    flex-direction: row;
+    border-bottom: 1px solid hsl(0, 100%, 96%);
+}
+
+.l{
+    display: inline;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 5px;
+}
+
+.nav{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px;
+}
+.btn{
+    display: none;
+}
+.btn2{
+    display: none;
+}
+
+@media (max-width: 768px) {
+    
+    header {
+        background-color: hsl(350, 100%, 88%);
+        flex-direction: column;
+        align-items: flex-start;
+        border-bottom: 5px solid hsl(156, 100%, 89%);
+    }
+    .nav {
+        flex-direction: column;
+        width: 100%;
+        align-items: left;
+    }
+    .l {
+        width: 100%;
+        text-align: center;
+        display: none;
+    }
+    .s{
+        display: none;
+        width:20%
+    }
+    .btn{
+    display: flex;
+    flex-direction: column;   /* stack spans vertically */
+    justify-content: space-between;
+    width: 30px;              /* overall button width */
+    height: 22px;             /* overall button height */
+    background: none;         /* remove default button styling */
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    }
+
+    .btn span {
+    display: block;
+    height: 3px;              /* thickness of each bar */
+    width: 100%;              /* span fills the button width */
+    background-color: #b93939;   /* bar color */
+    border-radius: 2px;       /* slightly rounded edges */
+    }
+    .btn2{
+    display: inline;
+    
+
+}
+
+}
